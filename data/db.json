@@ -1,0 +1,82 @@
+{
+  "ids": {
+    "BuildType": 10,
+    "Release": 3,
+    "Builds": 26,
+    "AsocReleaseRequestedBuilds": 14,
+    "AsocReleaseRequestedBuildsBuild":13
+  },
+  "models": {
+    "BuildType": {
+      "1": "{\"BuildTypeName\":\"Dev-Sign\",\"ID\":1}",
+      "2": "{\"BuildTypeName\":\"Prod-Sign\",\"ID\":2}",
+      "3": "{\"BuildTypeName\":\"Interim Prod-Sign\",\"ID\":3}",
+      "4": "{\"BuildTypeName\":\"Dev-Sign +1\",\"ID\":4}",
+      "5": "{\"BuildTypeName\":\"Dev-Sign +2\",\"ID\":5}",
+      "6": "{\"BuildTypeName\":\"Prod-Sign +1\",\"ID\":6}",
+      "7": "{\"BuildTypeName\":\"Prod-Sign +2\",\"ID\":7}",
+      "8": "{\"BuildTypeName\":\"Dev-Sign Chipimage\",\"ID\":8}",
+      "9": "{\"BuildTypeName\":\"Prod-Sign Chipimage\",\"ID\":9}"
+    },
+    "Release": {
+      "1": "{\"ReleaseName\":\"Vegetable\",\"ID\":1}",
+      "2": "{\"ReleaseName\":\"Fruit\",\"ID\":2}"
+    },
+    "Builds": {
+      "1":"{\"build_number\":\"Red\",\"build_type_id\":1,\"ID\":1}",
+      "2":"{\"build_number\":\"Green\",\"build_type_id\":1,\"ID\":2}",
+      "3":"{\"build_number\":\"Blue\",\"build_type_id\":1,\"ID\":3}",
+      "4":"{\"build_number\":\"White\",\"build_type_id\":2,\"ID\":4}",
+      "5":"{\"build_number\":\"Yellow\",\"build_type_id\":2,\"ID\":5}",
+      "6":"{\"build_number\":\"White\",\"build_type_id\":2,\"ID\":6}",
+      "7":"{\"build_number\":\"Yellow\",\"build_type_id\":3,\"ID\":7}",
+      "8":"{\"build_number\":\"White\",\"build_type_id\":3,\"ID\":8}",
+      "9":"{\"build_number\":\"Yellow\",\"build_type_id\":3,\"ID\":9}",
+      "10":"{\"build_number\":\"White\",\"build_type_id\":4,\"ID\":10}",
+      "11":"{\"build_number\":\"Yellow\",\"build_type_id\":4,\"ID\":11}",
+      "12":"{\"build_number\":\"White\",\"build_type_id\":4,\"ID\":12}",
+      "13":"{\"build_number\":\"Yellow\",\"build_type_id\":5,\"ID\":13}",
+      "14":"{\"build_number\":\"White\",\"build_type_id\":5,\"ID\":14}",
+      "15":"{\"build_number\":\"Yellow\",\"build_type_id\":5,\"ID\":15}",
+      "16":"{\"build_number\":\"White\",\"build_type_id\":6,\"ID\":16}",
+      "17":"{\"build_number\":\"Yellow\",\"build_type_id\":6,\"ID\":17}",
+      "18":"{\"build_number\":\"White\",\"build_type_id\":6,\"ID\":18}",
+      "19":"{\"build_number\":\"Yellow\",\"build_type_id\":7,\"ID\":19}",
+      "20":"{\"build_number\":\"White\",\"build_type_id\":7,\"ID\":20}",
+      "21":"{\"build_number\":\"Yellow\",\"build_type_id\":7,\"ID\":21}",
+      "22":"{\"build_number\":\"White\",\"build_type_id\":8,\"ID\":22}",
+      "23":"{\"build_number\":\"Yellow\",\"build_type_id\":8,\"ID\":23}",
+      "24":"{\"build_number\":\"White\",\"build_type_id\":8,\"ID\":24}",
+      "25":"{\"build_number\":\"Yellow\",\"build_type_id\":9,\"ID\":25}"
+    },
+    "AsocReleaseRequestedBuilds": {
+      "1": "{\"release_id\":1,\"build_type_id\":1,\"ID\":1}",
+      "2": "{\"release_id\":2,\"build_type_id\":1,\"ID\":2}",
+      "3": "{\"release_id\":1,\"build_type_id\":2,\"ID\":3}",
+      "4": "{\"release_id\":2,\"build_type_id\":2,\"ID\":4}",
+      "5": "{\"release_id\":1,\"build_type_id\":4,\"ID\":5}",
+      "6": "{\"release_id\":2,\"build_type_id\":4,\"ID\":6}",
+      "7": "{\"release_id\":1,\"build_type_id\":5,\"ID\":7}",
+      "8": "{\"release_id\":2,\"build_type_id\":8,\"ID\":8}",
+      "9": "{\"release_id\":1,\"build_type_id\":6,\"ID\":9}",
+      "10": "{\"release_id\":2,\"build_type_id\":3,\"ID\":10}",
+      "11": "{\"release_id\":1,\"build_type_id\":7,\"ID\":11}",
+      "12": "{\"release_id\":2,\"build_type_id\":7,\"ID\":12}",
+      "13": "{\"release_id\":1,\"build_type_id\":9,\"ID\":13}"
+    },
+    "AsocReleaseRequestedBuildsBuild": {
+      "1": "{\"asoc_release_requested_builds_id\":1,\"build_id\":1,\"ID\":1}",
+      "2": "{\"asoc_release_requested_builds_id\":2,\"build_id\":2,\"ID\":2}",
+      "3": "{\"asoc_release_requested_builds_id\":3,\"build_id\":4,\"ID\":3}",
+      "4": "{\"asoc_release_requested_builds_id\":4,\"build_id\":5,\"ID\":4}",
+      "5": "{\"asoc_release_requested_builds_id\":5,\"build_id\":10,\"ID\":5}",
+      "6": "{\"asoc_release_requested_builds_id\":6,\"build_id\":11,\"ID\":6}",
+      "7": "{\"asoc_release_requested_builds_id\":7,\"build_id\":14,\"ID\":7}",
+      "8": "{\"asoc_release_requested_builds_id\":8,\"build_id\":22,\"ID\":8}",
+      "9": "{\"asoc_release_requested_builds_id\":9,\"build_id\":18,\"ID\":9}",
+      "10": "{\"asoc_release_requested_builds_id\":10,\"build_id\":8,\"ID\":10}",
+      "11": "{\"asoc_release_requested_builds_id\":11,\"build_id\":20,\"ID\":11}",
+      "12": "{\"asoc_release_requested_builds_id\":13,\"build_id\":25,\"ID\":12}"
+    }
+  }
+}
