@@ -11,3 +11,8 @@ export * from './build-type-asoc-release-requested-builds.controller';
 export * from './asoc-release-requested-builds-release.controller';
 export * from './asoc-release-requested-builds-build-type.controller';
 export * from './release-build-type.controller';
+export * from './asoc-release-requested-builds-asoc-release-requested-builds-build.controller';
+export * from './asoc-release-requested-builds-build-asoc-release-requested-builds.controller';
+export * from './asoc-release-requested-builds-build-builds.controller';
+export * from './builds-asoc-release-requested-builds-build.controller';
+export * from './asoc-release-requested-builds-builds.controller';

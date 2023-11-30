@@ -1,6 +1,8 @@
-import {Entity, model, property, belongsTo} from '@loopback/repository';
+import {Entity, model, property, belongsTo, hasOne, hasMany} from '@loopback/repository';
 import {Release} from './release.model';
 import {BuildType} from './build-type.model';
+import {AsocReleaseRequestedBuildsBuild} from './asoc-release-requested-builds-build.model';
+import {Builds} from './builds.model';
 
 @model()
 export class AsocReleaseRequestedBuilds extends Entity {
@@ -15,6 +17,12 @@ export class AsocReleaseRequestedBuilds extends Entity {
 
   @belongsTo(() => BuildType, {name: 'buildTypeForRelease'})
   build_type_id: number;
+
+  @hasOne(() => AsocReleaseRequestedBuildsBuild, {keyTo: 'asoc_release_requested_builds_id'})
+  asocReleaseRequestedBuildsBuild: AsocReleaseRequestedBuildsBuild;
+
+  @hasMany(() => Builds, {through: {model: () => AsocReleaseRequestedBuildsBuild, keyFrom: 'asoc_release_requested_builds_id', keyTo: 'build_id'}})
+  ReleaseToBuildHasManyThrough: Builds[];
 
   constructor(data?: Partial<AsocReleaseRequestedBuilds>) {
     super(data);

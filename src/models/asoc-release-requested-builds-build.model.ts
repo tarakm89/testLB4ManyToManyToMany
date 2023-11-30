@@ -1,4 +1,6 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, belongsTo} from '@loopback/repository';
+import {AsocReleaseRequestedBuilds} from './asoc-release-requested-builds.model';
+import {Builds} from './builds.model';
 
 @model()
 export class AsocReleaseRequestedBuildsBuild extends Entity {
@@ -8,19 +10,11 @@ export class AsocReleaseRequestedBuildsBuild extends Entity {
     generated: true,
   })
   ID?: number;
-
-  @property({
-    type: 'number',
-    required: true,
-  })
+  @belongsTo(() => AsocReleaseRequestedBuilds, {name: 'asocRelaseRequestedBuildID'})
   asoc_release_requested_builds_id: number;
 
-  @property({
-    type: 'number',
-    required: true,
-  })
+  @belongsTo(() => Builds, {name: 'asocReleaseRequestedBuildsBuildBelongTo'})
   build_id: number;
-
 
   constructor(data?: Partial<AsocReleaseRequestedBuildsBuild>) {
     super(data);
